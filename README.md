@@ -20,6 +20,8 @@
 ---
 
 ## 🌐 Live Demo
+Take a look at the live website:
+👉 [https://nikhita-14.github.io/Online-BookStore-Website/](https://nikhita-14.github.io/Online-BookStore-Website/)
 
 Take a look at the live website on Hugging Face Spaces:  
 👉 [https://huggingface.co/spaces/Nikhita-14/Script-and-Quill-Co](https://huggingface.co/spaces/Nikhita-14/Script-and-Quill-Co)
