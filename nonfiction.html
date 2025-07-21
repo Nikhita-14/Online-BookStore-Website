@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Non-Fiction</title>
+  <link rel="stylesheet" href="styles1.css" />
+  <link rel="icon" type="image/png" href="images/fav.png">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">SCRIPT & QUILL CO.</div>
+    <div class="tagline">Where Timeless Stories Find a Home</div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="fiction.html" class="nav-item">Fiction</a>
+      <a href="nonfiction.html" class="nav-item active">Non-Fiction</a>
+      <a href="poetry.html" class="nav-item">Poetry</a>
+      <a href="biography.html" class="nav-item">Biography</a>
+      <a href="bookclub.html" class="nav-item">Book Club</a>
+      <a href="todo.html" class="nav-item">Reading List</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="featured-section">
+      <h2 class="section-title">Explore Topics</h2>
+      <div class="genres-grid">
+        <div class="genre-card">
+          <div class="genre-title">Memoir & Autobiography</div>
+          <div class="genre-desc">Personal stories that reveal the human spirit, resilience, and inner transformation.</div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-title">History</div>
+          <div class="genre-desc">Detailed accounts and compelling narratives that illuminate the past and its impact today.</div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-title">Self-Help</div>
+          <div class="genre-desc">Insightful guides to personal growth, success, and emotional well-being.</div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-title">Politics & Society</div>
+          <div class="genre-desc">Analyses and essays on the structures, systems, and ideas shaping our world.</div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-title">Science & Nature</div>
+          <div class="genre-desc">Fascinating explorations of the natural world, scientific breakthroughs, and curiosity-driven discovery.</div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-title">True Crime</div>
+          <div class="genre-desc">Gripping real-life cases and psychological deep-dives into the minds of criminals.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <h2 class="section-title">Current Bestsellers</h2>
+      <div class="books-grid">
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/edu.jpg" alt="Educated" style="width: 100%; height: 300px; object-fit: cover;" />
+            <div class="bestseller-badge">Bestseller</div>
+          </div>
+          <div class="book-info">
+            <div class="book-title">Educated</div>
+            <div class="book-author">Tara Westover</div>
+            <div class="book-price" data-price="520">₹520.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/atomic.jpg" alt="Atomic Habits" style="width: 100%; height: 300px; object-fit: cover;" />
+            <div class="bestseller-badge">Bestseller</div>
+          </div>
+          <div class="book-info">
+            <div class="book-title">Atomic Habits</div>
+            <div class="book-author">James Clear</div>
+            <div class="book-price" data-price="699">₹699.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/sapiens.jpg" alt="Sapiens" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">Sapiens</div>
+            <div class="book-author">Yuval Noah Harari</div>
+            <div class="book-price" data-price="799">₹799.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/quiet.jpg" alt="Quiet" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">Quiet</div>
+            <div class="book-author">Susan Cain</div>
+            <div class="book-price" data-price="620">₹620.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/outliers.png" alt="Outliers" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">Outliers</div>
+            <div class="book-author">Malcolm Gladwell</div>
+            <div class="book-price" data-price="430">₹430.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/becoming.jpg" alt="Becoming" style="width: 100%; height: 300px; object-fit: cover;" />
+            <div class="bestseller-badge">Bestseller</div>
+          </div>
+          <div class="book-info">
+            <div class="book-title">Becoming</div>
+            <div class="book-author">Michelle Obama</div>
+            <div class="book-price" data-price="899">₹899.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Purchase Modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Complete Your Purchase</h3>
+      <p class="modal-book-title"></p>
+      <label for="quantity">Quantity:</label>
+      <select id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p>Total Price: ₹<span id="totalPrice">0</span></p>
+      <label for="payment">Payment Method:</label>
+      <select id="payment">
+        <option>Credit Card</option>
+        <option>UPI</option>
+        <option>Cash on Delivery</option>
+      </select>
+      <button class="confirm-btn">Confirm Purchase</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Visit Our Store</h3>
+      <p>123 Lane, Hyderabad, 02138<br/>
+        Monday - Saturday: 9am - 9pm | Sunday: 10am - 6pm</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Events</a>
+        <a href="#" class="footer-link">Newsletter</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+      <p>2025 Script & Quill Co. Books</p>
+    </div>
+  </footer>
+
+  <script src="purchase.js"></script>
+</body>
+</html>

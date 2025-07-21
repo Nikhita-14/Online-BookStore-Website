@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biography</title>
+  <link rel="stylesheet" href="styles1.css" />
+  <link rel="icon" type="image/png" href="images/fav.png">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">SCRIPT & QUILL CO.</div>
+    <div class="tagline">Where Timeless Stories Find a Home</div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="fiction.html" class="nav-item">Fiction</a>
+      <a href="nonfiction.html" class="nav-item">Non-Fiction</a>
+      <a href="poetry.html" class="nav-item">Poetry</a>
+      <a href="biography.html" class="nav-item active">Biography</a>
+      <a href="bookclub.html" class="nav-item">Book Club</a>
+      <a href="todo.html" class="nav-item">Reading List</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="featured-section">
+      <h2 class="section-title">Memoirs & Biographies</h2>
+      <div class="genres-grid">
+        <div class="genre-card">
+          <div class="genre-title">Historical Icons</div>
+          <div class="genre-desc">Discover the real stories behind leaders, revolutionaries, and pioneers who shaped history.</div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-title">Modern Lives</div>
+          <div class="genre-desc">Personal narratives and reflections from today’s influential thinkers, artists, and public figures.</div>
+        </div>
+        <div class="genre-card">
+          <div class="genre-title">Inspirational Journeys</div>
+          <div class="genre-desc">Tales of resilience, transformation, and human triumph that move and inspire.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <h2 class="section-title">Editor's Biography Picks</h2>
+      <div class="books-grid">
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/becoming.jpg" alt="Becoming" style="width: 100%; height: 300px; object-fit: cover;" />
+            <div class="bestseller-badge">Bestseller</div>
+          </div>
+          <div class="book-info">
+            <div class="book-title">Becoming</div>
+            <div class="book-author">Michelle Obama</div>
+            <div class="book-price" data-price="699">₹699.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/steve.jpg" alt="Steve Jobs" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">Steve Jobs</div>
+            <div class="book-author">Walter Isaacson</div>
+            <div class="book-price" data-price="820">₹820.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover" style="padding: 0; position: relative;">
+            <img src="images/edu.jpg" alt="Educated" style="width: 100%; height: 300px; object-fit: cover;" />
+            <div class="bestseller-badge">Bestseller</div>
+          </div>
+          <div class="book-info">
+            <div class="book-title">Educated</div>
+            <div class="book-author">Tara Westover</div>
+            <div class="book-price" data-price="640">₹640.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Purchase Modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Complete Your Purchase</h3>
+      <p class="modal-book-title"></p>
+      <label for="quantity">Quantity:</label>
+      <select id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p>Total Price: ₹<span id="totalPrice">0</span></p>
+      <label for="payment">Payment Method:</label>
+      <select id="payment">
+        <option>Credit Card</option>
+        <option>UPI</option>
+        <option>Cash on Delivery</option>
+      </select>
+      <button class="confirm-btn">Confirm Purchase</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Visit Our Store</h3>
+      <p>123 Lane, Hyderabad, 02138<br/>
+        Monday - Saturday: 9am - 9pm | Sunday: 10am - 6pm</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Events</a>
+        <a href="#" class="footer-link">Newsletter</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+      <p>2025 Script & Quill Co. Books</p>
+    </div>
+  </footer>
+
+  <script src="purchase.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Script & Quill Co. Books</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="images/fav.png">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">SCRIPT & QUILL CO.</div>
+    <div class="tagline">Where Timeless Stories Find a Home</div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-item active">Home</a>
+      <a href="fiction.html" class="nav-item">Fiction</a>
+      <a href="nonfiction.html" class="nav-item">Non-Fiction</a>
+      <a href="poetry.html" class="nav-item">Poetry</a>
+      <a href="biography.html" class="nav-item">Biography</a>
+      <a href="bookclub.html" class="nav-item">Book Club</a>
+      <a href="todo.html" class="nav-item">Reading List</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="hero">
+      <h1>Welcome to Script & Quill</h1>
+      <p>Discover carefully curated collections of timeless classics, contemporary masterpieces, and hidden literary gems in our thoughtfully designed space.</p>
+    </section>
+
+    <section class="featured-section">
+      <h2 class="section-title">Trending Picks of the Week</h2>
+      <div class="books-grid">
+        <div class="book-card">
+          <div class="book-cover">
+            <img src="images/pride.jpg" alt="Pride and Prejudice" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">Pride and Prejudice</div>
+            <div class="book-author">Jane Austen</div>
+            <div class="book-price" data-price="789">₹789.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover">
+            <img src="images/forest.jpg" alt="The Comfort of Crows" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">The Comfort of Crows</div>
+            <div class="book-author">Margaret Renkl</div>
+            <div class="book-price" data-price="606">₹606.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover">
+            <img src="images/cruel1.jpg" alt="The Cruel Prince" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">The Cruel Prince</div>
+            <div class="book-author">Holly Black</div>
+            <div class="book-price" data-price="450">₹450.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+
+        <div class="book-card">
+          <div class="book-cover">
+            <img src="images/milk&honey.jpg" alt="Milk and Honey" style="width: 100%; height: 300px; object-fit: cover;" />
+          </div>
+          <div class="book-info">
+            <div class="book-title">Milk and Honey</div>
+            <div class="book-author">Rupi Kaur</div>
+            <div class="book-price" data-price="350">₹350.00</div>
+            <button class="purchase-btn">Purchase</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3>Complete Your Purchase</h3>
+      <p class="modal-book-title"></p>
+      <label for="quantity">Quantity:</label>
+      <select id="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <p>Total Price: ₹<span id="totalPrice">0</span></p>
+      <label for="payment">Payment Method:</label>
+      <select id="payment">
+        <option>Credit Card</option>
+        <option>UPI</option>
+        <option>Cash on Delivery</option>
+      </select>
+      <button class="confirm-btn">Confirm Purchase</button>
+    </div>
+  </div>
+ 
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Visit Our Store</h3>
+      <p>123 Lane, Hyderabad, 02138<br/>
+        Monday - Saturday: 9am - 9pm | Sunday: 10am - 6pm</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Events</a>
+        <a href="#" class="footer-link">Newsletter</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+      <p>2025 Script & Quill Co. Books</p>
+    </div>
+  </footer>
+
+  <script src="purchase.js"></script>
+</body>
+</html>

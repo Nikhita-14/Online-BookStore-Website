@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Club</title>
+  <link rel="stylesheet" href="styles1.css" />
+  <link rel="icon" type="image/png" href="images/fav.png">
+  <style>
+    .calendar-section {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    input[type="date"] {
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .apply-box {
+      display: none;
+      margin-top: 2rem;
+      padding: 2rem;
+      background: #f7fafc;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .apply-box input,
+    .apply-box textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 1rem;
+      margin-bottom: 1.2rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .apply-box button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      background: #2c5282;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .apply-box button:hover {
+      background: #1a365d;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">SCRIPT & QUILL CO.</div>
+    <div class="tagline">Where Stories Meet Conversation</div>
+  </header>
+
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="fiction.html" class="nav-item">Fiction</a>
+      <a href="nonfiction.html" class="nav-item">Non-Fiction</a>
+      <a href="poetry.html" class="nav-item">Poetry</a>
+      <a href="biography.html" class="nav-item">Biography</a>
+      <a href="bookclub.html" class="nav-item active">Book Club</a>
+      <a href="todo.html" class="nav-item">Reading List</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="featured-section">
+      <h2 class="section-title">Book Club Calendar</h2>
+      <p style="text-align:center; max-width: 600px; margin: 0 auto; color: #4a5568;">Select a date to see if a Book Club meeting is available and apply to join us for that session.</p>
+      <div class="calendar-section">
+        <label for="club-date">Choose a date:</label>
+        <input type="date" id="club-date" name="club-date" />
+      </div>
+
+      <div class="apply-box" id="apply-box">
+        <h3>Apply to Join the Book Club</h3>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea placeholder="Why would you love to join this session?" rows="4"></textarea>
+        <button>Submit Application</button>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <h3>Visit Our Store</h3>
+      <p>123 Lane, Hyderabad, 02138<br />
+        Monday - Saturday: 9am - 9pm | Sunday: 10am - 6pm</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Events</a>
+        <a href="#" class="footer-link">Newsletter</a>
+        <a href="#" class="footer-link">Contact</a>
+      </div>
+      <p>2025 Script & Quill Co. Books</p>
+    </div>
+  </footer>
+
+  <script>
+    const availableDates = ["2025-07-10", "2025-07-18", "2025-07-25"];
+    const dateInput = document.getElementById("club-date");
+    const applyBox = document.getElementById("apply-box");
+
+    dateInput.addEventListener("change", () => {
+      const selectedDate = dateInput.value;
+      if (availableDates.includes(selectedDate)) {
+        applyBox.style.display = "block";
+      } else {
+        applyBox.style.display = "none";
+        alert("Sorry, no book club meeting on this date.");
+      }
+    });
+  </script>
+</body>
+</html>
