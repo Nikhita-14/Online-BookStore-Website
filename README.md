@@ -28,7 +28,11 @@ Take a look at the live website on Hugging Face Spaces:
 
 ## 🗂️ Project Structure
 
-<pre><code>📁 Script-and-Quill-Co/ ├── index.html # Main homepage ├── style.css # Custom styles ├── script.js # Client-side behavior └── images/ # Visual assets (e.g., book covers) </code></pre>
+📁 Script-and-Quill-Co/  
+├── index.html — Main homepage  
+├── style.css — Custom styles  
+├── script.js — Client-side behavior  
+└── images/ — Visual assets (e.g., book covers)
 
 
 ---
